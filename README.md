@@ -44,7 +44,7 @@ El programador es quién decide QUE es lo que hará su API y COMO va a transmiti
 
 ### ¿Qué es SOAP?
 
-**SOAP** es otra sigla mas que siginica **S**imple **O**bject **A**ccess **P**rotocol. Como bien dice su nombre, es un protocolo que define cómo dos objetos en diferentes procesos pueden comunicarse entre si por medio de intercambio de datos **XML**.
+**SOAP** es otra sigla mas que significa **S**imple **O**bject **A**ccess **P**rotocol. Como bien dice su nombre, es un protocolo que define cómo dos objetos en diferentes procesos pueden comunicarse entre si por medio de intercambio de datos **XML**.
 
 ### Wait, ¿XML? creo que ya mencioné eso antes... ah si
 
@@ -56,12 +56,14 @@ REST es otra sigla que significa **RE**presentational **S**tate **T**ransfer. RE
 
 ## Perfecto, entonces... ¿Cómo funcionan?
 
-Un ejemplo sencillo para entender como funciona una API puede ser un restaurante.
+Un ejemplo sencillo para entender como funciona una API puede ser un restaurante. Dentro de un restaurante un mozo no tiene porque saber como cocinar. Sin embargo, debe saber como transmitir los pedidos que el cliente le hace para obtener lo que quiere.
 
-Cliente - Mesero(api) - Cocina (Servidor)
-
-Dentro de un restaurante un mozo no tiene porque saber como cocinar. Sin embargo, debe saber como transmitir los pedidos que el cliente le hace para obtener lo que quiere.
-
+___
+|  | Operación |  | Operación | |
+| :-: | :-: | :-: | :-: | :-: | 
+| **Cliente** | hace su pedido | **Mozo** | toma el pedido y se lo lleva a la cocina | **Cocina** |
+| **Cliente** | entrega el pedido | **Mozo** | prepara el pedido y lo entrega | **Cocina** |
+____
 En términos de requerimientos, el cliente le da un mensaje al mozo, éste se lo pasa a la cocina, la cocina prepara el pedido, el mozo recoge lo que cocina preparó y se lo lleva al cliente.
 
 ## Bien, ahora si... a lo que vinimos... API REST 
@@ -74,7 +76,7 @@ Es otra sigla que significa **H**yper **T**ext **T**ransfer **P**rotocol. Básic
 
 Las **peticiones** se definen por 2 cosas:
 - un **verbo HTTP**, el cúal indica la acción que se quiere llevar a cabo mediante la llamada a un servicio;
-- una **url**, que define la dirección a la que queremos realizar la petición;
+- una **URL**, que define la dirección a la que queremos realizar la petición;
 
 Las **respuestas** se definen por un código numérico que puede venir acompañado de un mensaje o no.
 
@@ -83,8 +85,6 @@ En éste tipo de API, el intercambio de información se puede realizar a través
 ### ¿Qué es JSON?
 
 Si bien se pronuncian similar, no es el Viernes 13, **JSON** es otra sigla más (si, otro más) que significa **J**ava**S**cript **O**bject **N**otation.
-
-Bien, muchos conceptos en un par de lineas. 
 
 Veamos otro ejemplo:
 
