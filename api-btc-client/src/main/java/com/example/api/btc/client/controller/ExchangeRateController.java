@@ -18,11 +18,8 @@ public class ExchangeRateController {
 
   @GetMapping(value = "/exchange-rate/{base}/{quote}")
   public ResponseEntity<ExchangeRateDto> getQuery(
-      @PathVariable String base,
-      @PathVariable String quote
-  ) {
+      @PathVariable String base, @PathVariable String quote) {
     ExchangeRateDto response = coinApiService.get(base, quote);
     return ResponseEntity.ok(response);
   }
-
 }

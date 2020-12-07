@@ -1,0 +1,8 @@
+logging.level.com.example.api.btc.client.client: DEBUG
+
+provider:
+  coinapi:
+    url: "https://rest.coinapi.io"
+
+keys:
+  coinapi: ${COINAPI_KEY}
